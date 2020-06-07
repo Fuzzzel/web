@@ -1,0 +1,232 @@
+html,body {
+    background-color: #171717;
+    height: 100%;
+    /*margin: 0;*/
+    color: white;
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: 20px;
+    /*padding:0;
+    text-align: center;*/
+}
+
+
+        /*
+         * Base structure
+         */
+
+         /* Hover.css - Author: Ian Lunn @IanLunn */
+.hvr-grow {
+     display: inline-block;
+     vertical-align: middle;
+     -webkit-transform: perspective(1px) translateZ(0);
+     transform: perspective(1px) translateZ(0);
+     box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+     -webkit-transition-duration: 0.3s;
+     transition-duration: 0.3s;
+     -webkit-transition-property: transform;
+     transition-property: transform;
+}
+    .hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+}
+
+.center {
+    width: 500px;
+    height: 600px;
+    position:absolute;
+    left:0; right:0;
+    top:0; bottom:0;
+    margin:auto;
+    max-width:100%;
+    max-height:100%;
+    overflow:auto;
+}
+
+.nadpis{
+  color: white;
+  font-size: 70px;
+  font-weight: 5000;
+  letter-spacing: 3px;
+  margin-bottom: 30px;
+  position: initial;
+  transition: 0.5s;
+  animation: animace 3.2s;
+  cursor: auto;
+}
+
+.nadpis:hover{
+      color: #a5a5a5;
+}
+
+.tlacitko{
+    position: center;
+    background-color: #171717;
+    color: white;
+    padding: 15px 32px;
+    border-radius: 5px;
+    display: block;
+    border: 3px solid #fcdb03;
+    font-size: 17px;
+    outline: none;
+    cursor: pointer;
+    text-decoration: none;
+    transition: 0.7s;
+    animation: tl1 3.8s;
+}
+
+.tlacitko:hover{
+    border: 3px solid #fce703;
+    background-color: #fce703;
+    color: #fff;
+}
+
+/* ANIMATION */
+.animated-text{
+  color: #fcdb03;
+  font-size: 35px;
+  font-weight: 500;
+  letter-spacing: 3px;
+  margin-bottom: 30px;
+  position: initial;
+  transition: 0.5s;
+  animation: animace2 3.2s;
+  cursor: auto;
+  height: 60px;
+  overflow: hidden;
+}
+
+.animated-text:hover{
+	color: #fc9403;
+}
+
+.line{
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 40px;
+  line-height: 60px;
+}
+
+.line:first-child{
+  animation: anim 12s infinite;
+}
+
+@keyframes anim {
+  0%{
+    margin-top: 0;
+  }
+  16%{
+    margin-top: -60px;
+  }
+  33%{
+    margin-top: -120px;
+  }
+  50%{
+    margin-top: -180px;
+  }
+  66%{
+    margin-top: -120px;
+  }
+  82%{
+    margin-top: -60px;
+  }
+  100%{
+    margin-top: 0;
+  }
+}
+
+.titulek{
+  color: #fcdb03;
+  font-size: 35px;
+  font-weight: 500;
+  letter-spacing: 3px;
+  margin-bottom: 30px;
+  position: initial;
+  transition: 0.5s;
+  animation: animace2 3.2s;
+  cursor: auto;
+}
+
+.titulek:hover{
+	color: #fc9403;
+}
+
+.iconamin {
+  animation: animace2 3.2s;
+}
+
+.spodok {
+font-size: 12px;
+
+color: #fff;
+
+position: absolute;
+
+top: 97%;
+
+text-align: center;
+}
+
+@keyframes animace {
+  0%{
+    letter-spacing: 20px;
+    margin-bottom: 0px;
+    opacity: 0;
+    font-size: 80px;
+  }
+  25%{
+    letter-spacing: 0px;
+    margin-bottom: 0px;
+    opacity: 0.9;
+    font-size: 80px
+  }
+  80%{
+    letter-spacing: 16px;
+    font-size: 80px;
+    margin-bottom: 0px;
+  }
+}
+
+@keyframes animace2 {
+  0%{
+    opacity: 0
+  }
+  30%{
+    top: 0%;
+    opacity: 1;
+  }
+  80%{
+    top: 12%;
+    opacity: 2;
+  }
+}
+
+.alert {
+  padding: 20px;
+  background-color: #f44336;
+  color: white;
+  opacity: 1;
+  transition: opacity 0.6s;
+  margin-bottom: 15px;
+  animation: animace2 3.2s;
+}
+
+.alert.success {background-color: #4CAF50;}
+.alert.info {background-color: #2196F3;}
+.alert.warning {background-color: #ff9800;}
+.alert.hyro {background-color: #696362;}
+
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.closebtn:hover {
+  color: black;
+}
