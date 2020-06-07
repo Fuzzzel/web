@@ -11,8 +11,8 @@ body{
 }
 .btn{
   display: inline-block;
-  width: 90px;
-  height: 90px;
+  width: 150px;
+  height: 150px;
   background: #f1f1f1;
   margin: 10px;
   border-radius: 30%;
@@ -23,7 +23,7 @@ body{
 }
 .btn i{
   line-height: 90px;
-  font-size: 26px;
+  font-size: 30px;
   transition: 0.2s linear;
 }
 .btn:hover i{
@@ -41,7 +41,7 @@ body{
   top: 90%;
 }
 .btn:hover::before{
-  animation: aaa 0.7s 1;
+  animation: aaa 1.0s 1;
   top: -10%;
   left: -10%;
 }
